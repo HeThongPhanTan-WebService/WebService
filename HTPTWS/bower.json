@@ -1,7 +1,7 @@
 {
   "name": "viDoc",
   "description": "MeanJS and AdminLTE GUI.",
-  "homepage": "https://github.com/CyberAirVN/ViDoc",
+  "homepage": "https://github.com/HeThongPhanTan-WebService/WebService",
   "license": "MIT",
   "dependencies": {
     "angular": "~1.5.0",

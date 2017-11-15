@@ -18,7 +18,7 @@
       $rootScope.$on('$stateChangeSuccess', listener);
 
       function listener(event, toState) {
-        var applicationCoreTitle = 'Cyber Air',
+        var applicationCoreTitle = 'N2L Team',
           separeteBy = ' - ';
         if (toState.data && toState.data.pageTitle) {
           var stateTitle = $interpolate(toState.data.pageTitle)($state.$current.locals.globals);
