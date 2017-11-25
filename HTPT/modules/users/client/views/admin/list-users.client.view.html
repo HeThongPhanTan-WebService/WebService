@@ -1,0 +1,100 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    Users
+    <small>List Users</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active">Users</li>
+  </ol>
+</section>
+
+<!--<section class="content">-->
+<!--<div class="box box-success">-->
+<!--<div class="box-header with-border">-->
+<!--<h3 class="box-title">User</h3>-->
+<!--<div class="pull-right box-tools">-->
+<!--<input class="form-control col-md-4" type="text" ng-model="vm.search" placeholder="Search" ng-change="vm.figureOutItemsToDisplay()" />-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="box-body">-->
+<!--<div class="list-group">-->
+<!--<a ng-repeat="user in vm.pagedItems" ui-sref="admin.user({userId: user._id})" class="list-group-item">-->
+<!--<h4 class="list-group-item-heading" ng-bind="user.username"></h4>-->
+<!--<p class="list-group-item-text pull-right small" ng-bind="user.roles"></p>-->
+<!--<p class="list-group-item-text" ng-bind="user.email"></p>-->
+<!--</a>-->
+<!--</div>-->
+<!--<uib-pagination boundary-links="true" max-size="8" items-per-page="vm.itemsPerPage" total-items="vm.filterLength" ng-model="vm.currentPage" ng-change="vm.pageChanged()"></uib-pagination>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+
+
+<section>
+  <div class="box box-success">
+    <div class="box-header with-border">
+      <h3 class="box-title"></h3>
+      <div class="pull-right box-tools">
+        <input class="form-control col-md-4" type="text" ng-model="vm.search" placeholder="Search" ng-change="vm.figureOutItemsToDisplay()" />
+      </div>
+    </div>
+  <div class="row" style="margin: 0">
+    <div class="box-body">
+    <div class="list-group">
+      <div class="col-sm-4" ng-repeat="user in vm.items" ui-sref="admin.user({userId: user._id})" class="list-group-item" style=" padding: 16px;">
+        <div class="pro">
+          <div style="">
+             <h4 class="list-group-item-heading wrap-owner-detail" style="text-transform: capitalize;color: #009688;padding-left: 16px; font-family: sans-serif; " ng-bind="user.email"></h4></span>
+          </div>
+          <div class="r-details j_details">
+            <div class="fl r_lt">
+              <div class="j_details r-image">
+                <img src="/{{user.profileImageURL}}" class="j_details r-image " alt="Picture"  >
+
+              </div>
+              <div class="usr_rt">
+                <div class="border_usr">
+                  TK :<b> <span class="list-group-item-text" ng-bind="user.username"></span></b>
+                </div>
+                <div>
+                  Quyền :<b>  <span class="list-group-item-text" ng-bind="user.roles"></span></b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap-owner-detail">
+            <span class="" ng-bind="'Day ' + (user.created | date:'mediumDate') "></span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+      <uib-pagination boundary-links="true" max-size="8" items-per-page="vm.itemsPerPage" total-items="vm.filterLength" ng-model="vm.currentPage" ng-change="vm.pageChanged()"></uib-pagination>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- pager -->
+<div class="text-center">
+  <ul ng-if="vm.users.length > 9" class="pagination">
+    <li ng-class="{disabled:vm.pager.currentPage === 1}">
+      <a ng-click="vm.setPage(1)">First</a>
+    </li>
+    <li ng-class="{disabled:vm.pager.currentPage === 1}">
+      <a ng-click="vm.setPage(vm.pager.currentPage - 1)">Previous</a>
+    </li>
+    <li ng-repeat="page in vm.pager.pages" ng-class="{active:vm.pager.currentPage === page}">
+      <a ng-click="vm.setPage(page)">{{page}}</a>
+    </li>
+    <li ng-class="{disabled:vm.pager.currentPage === vm.pager.totalPages}">
+      <a ng-click="vm.setPage(vm.pager.currentPage + 1)">Next</a>
+    </li>
+    <li ng-class="{disabled:vm.pager.currentPage === vm.pager.totalPages}">
+      <a ng-click="vm.setPage(vm.pager.totalPages)">Last</a>
+    </li>
+  </ul>
+</div>
+
+
