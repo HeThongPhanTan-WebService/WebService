@@ -9,7 +9,7 @@
 
   function menuConfig(menuService) {
       menuService.addMenuItem('sidebar', {
-          title: 'Admin',
+          title: 'Quản Trị Admin',
           state: 'admin',
           roles: ['admin'],
           type: 'dropdown'

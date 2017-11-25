@@ -87,25 +87,60 @@ a:hover .header-profile-image {
   margin-top: 5px;
 }
 .prj_details .user-image {
-  height: 68px;
   margin-top: 30px;
-  padding: 8px 10px;
-  width: 88px;
-  background: #fff;
-  border-radius: 0;
-  box-shadow: none;
 }
-.user-image {
-  width: 500px;
-  height: 500px;
-}
+
+/*.user-image {*/
+  /*width: 500px;*/
+  /*height: 500px;*/
+/*}*/
 
 .usr_rt {
   position: absolute;
   left: 180px;
   top: 30px;
 }
-
 .menu{
   height: 165px;
+}
+user-panel>.info {
+  padding: 0px 5px 5px 15px;
+  line-height: 1;
+  position: absolute;
+  left: 55px;
+}
+.r_rt {
+  position: absolute;
+  left: 180px;
+  top: 30px;
+}
+.r-details {
+
+
+  background-color: rgb(242, 242, 242);
+  height: 125px;
+  margin-top: 10px;
+  padding-left: 25px;
+  position: relative;
+  border-bottom: 1px solid #DCDADB;
+}
+.r-details.j_details {
+  border-top: 1px solid #DCDADB;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(220, 218, 219);
+
+}
+
+.j_details .r-image {
+  height: 110px;
+  margin-top: 5px;
+padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+margin-right: 5px;
+  margin-left: -5px;
+  width: 125px;
+  background: #fff;
+
 }

@@ -30,7 +30,6 @@ module.exports = {
         'public/lib/angular-ui-scroll/dist/ui-scroll.min.js',
         'public/lib/angular-ui-scroll/dist/ui-scroll-grid.min.js',
         'public/lib/ng-letter-avatar/dist/ngletteravatar.min.js'
-
         // endbower
       ]
     },

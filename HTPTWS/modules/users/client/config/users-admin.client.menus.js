@@ -10,8 +10,14 @@
   // Configuring the Users module
   function menuConfig(menuService) {
       menuService.addSubMenuItem('sidebar', 'admin', {
-          title: 'Manage Users',
-          state: 'admin.users'
+          title: 'Danh Sách Người Sử Dụng',
+          state: 'admin.users',
+
       });
+      // menuService.addMenuItem('sidebar', {
+      //     title: 'Thông Tin Người Sử Dụng',
+      //     state: 'user.list',
+      //     roles: ['user']
+      // });
   }
 }());

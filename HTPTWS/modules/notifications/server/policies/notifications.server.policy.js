@@ -20,11 +20,9 @@ exports.invokeRolesPolicies = function () {
     }, {
       resources: '/api/notifications/:notificationId',
       permissions: '*'
-
     }, {
       resources: '/api/notifications-read',
       permissions: '*'
-
     }]
   }, {
     roles: ['user'],
