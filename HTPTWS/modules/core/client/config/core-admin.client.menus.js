@@ -8,5 +8,11 @@
   menuConfig.$inject = ['menuService'];
 
   function menuConfig(menuService) {
+      menuService.addMenuItem('sidebar', {
+          title: 'Quản Trị Admin',
+          state: 'admin',
+          roles: ['admin'],
+          type: 'dropdown'
+      });
   }
 }());

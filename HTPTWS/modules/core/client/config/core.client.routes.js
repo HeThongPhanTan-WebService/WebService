@@ -29,12 +29,18 @@
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: '/modules/projects/client/views/list-projects.client.view.html',
-        controller: 'ProjectsListController',
-        controllerAs: 'vm',
-        data: {
-          pageTitle: 'Projects List',
-          roles: ['user', 'admin']
+        // templateUrl: '/modules/projects/client/views/list-projects.client.view.html',
+        //     controller: 'ProjectsListController',
+        //     controllerAs: 'vm',
+        //     data: {
+        //         pageTitle: 'Projects List',
+        //         roles: ['user', 'admin']
+          templateUrl: '/modules/users/client/views/admin/list-users.client.view.html',
+          controller: 'UserListController',
+          controllerAs: 'vm',
+          data: {
+              pageTitle: 'Users List',
+              roles: ['user', 'admin']
         }
       })
       .state('not-found', {

@@ -6,7 +6,7 @@ diff a/FirstMean/bower.json b/FirstMean/bower.json	(rejected hunks)
 -  "homepage": "http://meanjs.org/",
 +  "name": "firstmean",
 +  "description": "MeanJS and AdminLTE GUI.",
-+  "homepage": "https://github.com/HeThongPhanTan-WebService/WebService",
++  "homepage": "https://github.com/CyberAirVN/MeanJSExample",
    "license": "MIT",
    "dependencies": {
      "angular": "~1.5.0",
